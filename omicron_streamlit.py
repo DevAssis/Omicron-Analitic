@@ -22,3 +22,5 @@ dfShow = df.groupby(by=['date']).sum()
 fig = px.line(dfShow, x=dfShow.index, y='num_sequences')
 fig.update_layout(title='Casos diários de Covid-19')
 st.plotly_chart(fig, use_container_width=True)
+
+# link do app: https://share.streamlit.io/devassis/omicron-analitic/omicron_streamlit.py
